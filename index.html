@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Id Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav>
+        <h3>ID Card Generator</h3>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <h4>Enter Student Details</h4>
+            <form action="#">
+                <label for="name">Enter Name: </label><br>
+                <input type="text" id="name" name="name" placeholder="&#128100 Enter name"><br><br>
+                <label for="college">Enter College Name: </label><br>
+                <input type="text" id="college" name="college" placeholder="&#127979; Enter college name"><br><br>
+                <label for="location">Enter Location: </label><br>
+                <input type="text" id="location" name="location" placeholder="&#127970; Enter city"><br><br>
+                <label for="imgSelector">Enter student's picture: </label><br>
+                <input type="file" id="imgSelector"><br><br>
+                <img src="#" id="image" alt="" width="200"><br><br>
+                <button id="btn" class="btn">Generate</button>                
+            </form>
+        </div>
+        <div class="right">
+            <h4>Generate ID Card</h4>
+            <div class="card">
+                <div class="card-image">
+                    <img id="idCardImage" src="#" alt="">
+                </div>
+                <div class="card-content">
+                    <p id="printName"></p><br>
+                    <p id="printCollege"></p><br>
+                    <p id="printLocation"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
